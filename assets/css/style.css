@@ -2,6 +2,7 @@ header {
     border-color: #cccccc;
     background-color: #ffffff;
     padding: 30px;
+    max-width: 560px;
 }
 body {
     margin: 0px;
@@ -9,6 +10,9 @@ body {
     padding-left: 150px;
     background-color: #d6d6d6f3;
     max-width: 960px;
+}
+html {
+    position: relative;
 }
 a {
     text-decoration: none;
@@ -29,7 +33,7 @@ hr {
 h1 {
     background-color: #4aaaa5; 
     display: inline;
-    color: white;
+    color:white;
     padding-left: 30px;
     padding: 0px 20px;
 }
@@ -42,10 +46,16 @@ section {
     margin: 0px;
 }
 .container {
-    margin-top: -16px;
-    margin-right: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
+    width: 100%;
+    max-width: 620px;
+    margin: 0 0 40px 0;
+    clear: both;
+}
+.container2 {
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+
 }
 img {
     float: left;
@@ -67,7 +77,17 @@ p {
     color: #777777;
     background-color: white;
     padding-left: 15px;
-    padding-right: 15px;
+    padding-right: 50px;
+}
+footer {
+    background: #666666;
+    color: #ffffff;
+    padding: 30px 0;
+    clear: both;
+    border-top: 8px solid #4aaaa5;
+    color: #cccccc;
+    font-size: 12px;
+    text-align: center;
 }
 input[type=text], select, textarea {
     width: 100%;
@@ -90,11 +110,6 @@ input[type=submit] {
 input[type=submit]:hover {
     background-color: #4aaaa5;
 }
-.container2 {
-    border-radius: 5px;
-    background-color: white;
-    padding: 0px;
-}
 .row {
     display: flex;
     flex-wrap: wrap;
@@ -109,4 +124,35 @@ input[type=submit]:hover {
     padding-right: 25px;
     vertical-align: middle;
 }
+.sidebar {
+    background: #ffffff;
+    padding: 30px;
+    width: 100%;
+    max-width: 270px;
+    float: right;
+    border: 1px solid #dddddd;
+    margin-bottom: 10px;
+    margin-top: -560px;
+}
+.sidebar h2 {
+    border-bottom: 2px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 15px;
+    line-height: 22px;
+}
+.social {
+    widows: 62px;
+    height: 62px;
+    margin-top: 8px;
+    margin-right: 5px;
+}
 
+@media only screen and (max-width: 980px) {
+
+}
+@media only screen and (max-width: 760px) {
+
+}
+@media only screen and (max-width: 640px) {
+
+}

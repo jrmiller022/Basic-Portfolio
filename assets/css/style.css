@@ -1,16 +1,10 @@
-header {
-    border-color: #cccccc;
-    background-color:grey;
-    padding: 30px;
-    max-width: 560px;
-}
 body {
     margin: 0px;
     padding: 20px;
     padding-left: 150px;
     background-color: gray;
     max-width: 960px;
-    background-image: url(/basic-portfolio/assets/images/photo-1529101091764-c3526daf38fe.jpeg);
+    background-image: url(/assets/images/Abstract-Wallpapers-4.jpg);
 }
 html {
     position: relative;
@@ -24,7 +18,7 @@ a {
     float: right;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
     word-spacing: 20px;
 }
@@ -33,7 +27,6 @@ hr {
     border-color: #ffffff;
 }
 h1 {
-    background-color: rgb(39, 39, 230); 
     display: inline;
     color:white;
 }
@@ -41,6 +34,9 @@ h2 {
     color: #4aaaa5;
     padding: 0px;
     padding-right: 50px;
+    text-align: center;
+    font-size: 35px;
+    font-style: oblique;
 }
 section {
     margin: 0px;
@@ -74,17 +70,15 @@ img {
     vertical-align: middle;
 }
 p {
-    line-height: 40px;
-    color: #777777;
-    background-color: white;
+    line-height: 35px;
+    font-size: 20px;
+    color: rgba(245, 245, 245, 0.781);
     padding-left: 15px;
-    padding-right: 50px;
-    opacity: 1;
 }
 footer {
     background: #666666;
     color: #ffffff;
-    padding: 30px 0;
+    padding: 0px 0;
     clear: both;
     border-top: 8px solid #4aaaa5;
     color: #cccccc;
@@ -127,20 +121,20 @@ input[type=submit]:hover {
     vertical-align: middle;
 }
 .sidebar {
-    background: #ffffff;
     padding: 30px;
     width: 100%;
     max-width: 270px;
     float: right;
-    border: 1px solid #dddddd;
-    margin-bottom: 10px;
-    margin-top: -560px;
+    margin-bottom: 0px;
+    margin-top: -600px;
 }
 .sidebar h2 {
     border-bottom: 2px solid #eeeeee;
     padding-bottom: 20px;
     margin-bottom: 15px;
     line-height: 22px;
+    color: whitesmoke;
+    font-size: 25px;
 }
 .social {
     widows: 62px;

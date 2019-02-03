@@ -38,6 +38,13 @@ h2 {
     font-size: 35px;
     font-style: oblique;
 }
+h3 {
+    color: white;
+    padding: 0px;
+    padding-right: 50px;
+    text-align: center;
+    font-style: oblique; 
+}
 section {
     margin: 0px;
     opacity: 0.9;
@@ -52,13 +59,12 @@ section {
     border-radius: 5px;
     background-color: gray;
     padding: 10px;
-
 }
 img {
     float: left;
     margin-right: 20px;
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
     padding-left: 15px;
 }
 .images { 
@@ -69,20 +75,44 @@ img {
     display: block;
 }
 p {
-    line-height: 35px;
+    line-height: 30px;
     font-size: 20px;
     color: rgba(245, 245, 245, 0.781);
     padding-left: 15px;
 }
-footer {
+.footer-main {
     background: #666666;
     color: #ffffff;
-    padding: 0px 0;
-    clear: both;
-    border-top: 8px solid #4aaaa5;
-    color: #cccccc;
-    font-size: 12px;
+    padding: 20px 0px;
+    height: auto;
+    margin: auto;
     text-align: center;
+    width: 100%;
+}
+.footerLinks {
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+.footerLinks ul {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+}
+.footerLinks ul li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin: 0px 10px;
+    border-radius: 100%;
+    background: greenyellow;
+}
+.footerLinks ul li a {
+    color: white;
+    font-size: 25px;
+}
+.footerLinks ul li a i {
+    line-height: 50px;    
 }
 input[type=text], select, textarea {
     width: 100%;
@@ -119,35 +149,29 @@ input[type=submit]:hover {
     padding-right: 25px;
     vertical-align: middle;
 }
-.sidebar {
-    padding: 30px;
-    width: 100%;
-    max-width: 270px;
-    float: right;
-    margin-bottom: 0px;
-    margin-top: -600px;
-}
-.sidebar h2 {
-    border-bottom: 2px solid #eeeeee;
-    padding-bottom: 20px;
-    margin-bottom: 15px;
-    line-height: 22px;
-    color: whitesmoke;
-    font-size: 25px;
-}
 .social {
     widows: 62px;
     height: 62px;
     margin-top: 8px;
     margin-right: 5px;
+    flex-wrap: wrap;
 }
-
 @media only screen and (max-width: 980px) {
-
+    nav.navbar.navbar-custom {
+        padding: 0;
+        margin: 0;
+    }
 }
 @media only screen and (max-width: 760px) {
-
+    nav.navbar.navbar-custom {
+        padding: 0;
+        margin: 0;
+    }
 }
 @media only screen and (max-width: 640px) {
-
+    nav.navbar.navbar-custom {
+        padding: 0;
+        margin: 0;
+    }
 }
+

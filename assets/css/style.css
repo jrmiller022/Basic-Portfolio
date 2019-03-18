@@ -157,19 +157,7 @@ input[type=submit]:hover {
     flex-wrap: wrap;
 }
 @media only screen and (max-width: 980px) {
-    nav.navbar.navbar-custom {
-        padding: 0;
-        margin: 0;
-    }
-}
-@media only screen and (max-width: 760px) {
-    nav.navbar.navbar-custom {
-        padding: 0;
-        margin: 0;
-    }
-}
-@media only screen and (max-width: 640px) {
-    nav.navbar.navbar-custom {
+        body      {
         padding: 0;
         margin: 0;
     }

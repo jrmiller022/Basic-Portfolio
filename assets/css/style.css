@@ -1,14 +1,6 @@
-body {
-    /* max-width: 960px; */
-}
-
 .home-pg {
     background-image: url("../images/newbanner.jpg");
     background-repeat: no-repeat;
-}
-
-html {
-    /* position: relative; */
 }
 
 a {

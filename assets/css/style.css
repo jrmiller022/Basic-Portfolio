@@ -1,72 +1,100 @@
 body {
-    margin: 0px;
-    padding: 20px;
-    padding-left: 150px;
-    background-color: gray;
-    max-width: 960px;
-    background-image: url("../images/Abstract-Wallpapers-4.jpg");
+    /* max-width: 960px; */
 }
+
+.home-pg {
+    background-image: url("../images/newbanner.jpg");
+    background-repeat: no-repeat;
+}
+
 html {
-    position: relative;
+    /* position: relative; */
 }
+
 a {
     text-decoration: none;
-    color: white; 
+    color: black; 
 }
-.topnav {
-    list-style-type: none;
-    float: right;
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
+
+/* --------------
+    Sidebar 
+---------------- */
+
+.wrapper {
+    display: flex;
+}
+
+#sidebar {
+    height: 100%;
+    width: 220px;
+    color: #333;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 10px #333;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    background-color: rgb(192, 21, 15);
+    opacity: 0.8;
+}
+
+img {
+    border-radius: 50%;
+    padding: 18px;
+    margin-left: 10px;
+}
+
+ul {
     font-size: 20px;
-    font-weight: bold;
-    word-spacing: 20px;
+    padding: 5px;
+    margin-right: 35px;
+    padding-left: 35px;
 }
-hr {
-    margin: 5px;
-    border-color: #ffffff;
-}
-h1 {
-    display: inline;
-    color:white;
-}
+
 h2 {
     color: #4aaaa5;
-    padding: 0px;
-    padding-right: 50px;
+    padding: 5px;
     text-align: center;
     font-size: 35px;
     font-style: oblique;
 }
+
 h3 {
-    color: white;
+    color: #4aaaa5;
     padding: 0px;
-    padding-right: 50px;
     text-align: center;
     font-style: oblique; 
 }
-section {
-    margin: 0px;
-    opacity: 0.9;
+
+h4 {
+    color:#4aaaa5;
+    padding: 0px;
+    text-align: center;
+    font-style: oblique; 
 }
+
+hr {
+    border: solid;
+}
+
 .container {
-    width: 100%;
     max-width: 620px;
-    margin: 0 0 40px 0;
-    clear: both;
+    padding-left: 50px;
 }
+
 .container2 {
     border-radius: 5px;
     background-color: gray;
     padding: 10px;
 }
+
 img {
-    float: left;
-    margin-right: 20px;
     height: 150px;
     width: 150px;
     padding-left: 15px;
 }
+
 .images { 
     display: table; 
     display: table-cell;
@@ -74,46 +102,13 @@ img {
     margin: 0 auto;
     display: block;
 }
+
 p {
     line-height: 30px;
     font-size: 20px;
-    color: rgba(245, 245, 245, 0.781);
-    padding-left: 15px;
+    background-color: #ffffff;
 }
-.footer-main {
-    background: #666666;
-    color: #ffffff;
-    padding: 20px 0px;
-    height: auto;
-    margin: auto;
-    text-align: center;
-    width: 100%;
-}
-.footerLinks {
-    width: 100%;
-    height: auto;
-    margin: auto;
-}
-.footerLinks ul {
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-}
-.footerLinks ul li {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    margin: 0px 10px;
-    border-radius: 100%;
-    background: greenyellow;
-}
-.footerLinks ul li a {
-    color: white;
-    font-size: 25px;
-}
-.footerLinks ul li a i {
-    line-height: 50px;    
-}
+
 input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -124,6 +119,7 @@ input[type=text], select, textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
+
 input[type=submit] {
     background-color: #4aaaa5;
     color: white;
@@ -132,34 +128,39 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
+
 input[type=submit]:hover {
     background-color: #4aaaa5;
 }
+
 .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0px;
 }
+
 .column {
     flex: 75%;
     padding: 0 10px;
 }
+
 .column img {
     margin-top: 38px;
     padding-right: 25px;
     vertical-align: middle;
 }
-.social {
-    widows: 62px;
-    height: 62px;
-    margin-top: 8px;
-    margin-right: 5px;
-    flex-wrap: wrap;
+
+@media screen and (max-width: 768px) {
+    #sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
 }
-@media only screen and (max-width: 768px) {
-        body      {
-        padding: 0;
-        margin: 0;
+
+@media screen and (max-width: 375px) {
+    #sidebar {
+        text-align: center;
     }
 }
 
